@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ذكريات إيلان وياسر 💖</title>
+  <style>
+    body {
+      font-family: 'Tahoma', Arial, sans-serif;
+      background: #ffe4ec; /* وردي فاتح */
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+      color: #d45d7a; /* وردي أغمق للعنوان */
+    }
+    p.intro {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #8b3b4d; /* هادي للكتابة */
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .gallery img {
+      width: 200px; /* حجم أكبر للصور */
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>إيلان وياسر 💖</h1>
+  <p class="intro">
+    الله يديمنا لبعض يا أجمل ما ملكت…<br>
+    كل لحظة قضيناها معًا ذكرى لا تُنسى 🤍
+  </p>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    const gallery = document.getElementById('gallery');
+
+    // أسماء الصور الـ 80
+    const images = [
+      "image.png","image (2).png","image (3).png","76D3FD53-A35F-4BF8-9780-9CF0FD0DB7C8.png","image (4).png",
+      "IMG_6553.png","D0DD7927-7EE2-40B2-AB83-1F6B31EEB783.png","B5B59677-E9B5-46CF-90B7-953DA05C874B.png","0D8E285D-B4ED-48B6-811F-77AE03CFA2D7.jpg","IMG_6564.png",
+      "IMG_6711.png","IMG_7291.png","IMG_6968.png","IMG_6967.png","IMG_6932.png",
+      "IMG_6888.jpg","IMG_6726.png","IMG_6727.png","image (5).png","image (6).png",
+      "image (7).png","image (8).png","image (9).png","image (10).png","image (11).png",
+      "image (12).png","image (13).png","image (14).png","image (15).png","image (16).png",
+      "image (17).png","image (18).png","image (19).png","image (20).png","image (21).png",
+      "image (22).png","image (23).png","image (24).png","image (25).png","image (26).png",
+      "image (27).png","image (28).png","image (29).png","image (30).png","image (31).png",
+      "image (32).png","image (33).png","image (34).png","image (35).png","image (36).png",
+      "image (37).png","image (38).png","image (39).png","image (40).png","image (41).png",
+      "image (42).png","image (43).png","image (44).png","image (45).png","image (46).png",
+      "image (47).png","image (48).png","image (49).png","image (50).png","image (51).png",
+      "image (52).png","image (53).png","image (54).png","image (55).png","image (56).png",
+      "image (57).png","image (58).png","image (59).png","image (60).png","image (61).png",
+      "image (62).png","image (63).png","image (64).png","image (65).png","image (66).png",
+      "image (67).png","image (68).png","image (69).png","image (70).png","image (71).png",
+      "image (72).png","image (73).png","image (74).png","image (75).png","image (76).png",
+      "image (77).png","image (78).png","image (79).png","image (80).png"
+    ];
+
+    images.forEach(src => {
+      const img = document.createElement('img');
+      img.src = 'images/' + src; // ضع الصور في مجلد images
+      gallery.appendChild(img);
+    });
+  </script>
+
+</body>
+</html>
